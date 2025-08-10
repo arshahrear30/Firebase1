@@ -18,3 +18,8 @@ id 'com.google.gms.google-services' version '4.4.3' apply false
 build.gradle (Module App) : 
 plugins { 
 id 'com.google.gms.google-services'
+
+
+dependencies {
+implementation(platform("com.google.firebase:firebase-bom:34.1.0"))
+implementation("com.google.firebase:firebase-analytics")
