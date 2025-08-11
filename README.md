@@ -23,3 +23,9 @@ id 'com.google.gms.google-services'
 dependencies {
 implementation(platform("com.google.firebase:firebase-bom:34.1.0"))
 implementation("com.google.firebase:firebase-analytics")
+
+App uniq package name add in firebase console project
+
+ Given file in step 2 Download it.
+ Android to Project shift And phaste into in app folder
+
