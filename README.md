@@ -29,3 +29,5 @@ App uniq package name add in firebase console project
  Given file in step 2 Download it.
  Android to Project shift And phaste into in app folder
 
+ https://firebase.google.com/docs/in-app-messaging/get-started?platform=ios
+
