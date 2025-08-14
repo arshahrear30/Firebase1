@@ -38,6 +38,8 @@ https://firebase.google.com/docs/in-app-messaging/get-started?platform=android
  Given file in step 2 Download it.
  Android to Project shift And phaste into in app folder
 
+Check in Firebase Consol Analysis How many active device? 
+
  
 
  
