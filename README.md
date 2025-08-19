@@ -1,5 +1,5 @@
 # Firebase1
-
+//////////////2111////////////
 gradle.properties     :   
 android.enableJetifier=true
 
@@ -41,5 +41,5 @@ https://firebase.google.com/docs/in-app-messaging/get-started?platform=android
 Check in Firebase Consol Analysis How many active device? 
 
  
-
+////////////2112////////////
  
