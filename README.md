@@ -31,15 +31,21 @@ https://firebase.google.com/docs/in-app-messaging/get-started?platform=android
  implementation("com.google.firebase:firebase-inappmessaging-display")
 
 
- Firebase এ console open করতে হবে । Android select করতে হবে । আর Android Package name দিবো হচ্ছে :: build.gradle (Module App) এর ভিতরের 
+ Firebase এ console open করতে হবে।বাম পাশে Home icon: Project overview তে যাবো । Android select করতে হবে । আর Android Package name দিবো হচ্ছে :: build.gradle (Module App) এর ভিতরের 
  defaultConfig {
         applicationId "com.example.onefirebase"  এইটা লিখবো com.example. এর লেখাটা আরকি । 
 
+Add App nickname and Click Resister App
+
  Given file in step 2 Download it.
- Android to Project shift And phaste into in app folder
+ Android to Project যাও And phaste into in app folder
+
+Step 3 ত শুরুতেই libdrary implement করে নিচি  step 4 Continue
 
 Check in Firebase Consol Analysis How many active device? 
 
  
 ////////////2112////////////
- In app messaging 
+ In app messaging
+
+ Project Overview << RUN << Messaging << 
