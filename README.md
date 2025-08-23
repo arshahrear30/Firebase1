@@ -75,5 +75,5 @@ Text on Device :: Android studio  যে ফোন থেকে ইন্সট�
 
 
 ------2115-------
-
-  
+Real time Notification : App open করলেই যে বলে Allow App_name to send you notification . Allow / Don't Allow
+  https://firebase.google.com/docs/cloud-messaging/android/client
