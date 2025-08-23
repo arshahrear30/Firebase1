@@ -3,7 +3,9 @@
 gradle.properties     :   
 android.enableJetifier=true
 
-
+internet permission(manifest) : 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
 https://firebase.google.com/docs/android/setup#groovy 
 
@@ -70,3 +72,8 @@ Project Overview << RUN << Messaging << Firebase in-app messages<< Create <<   �
 
 
 Text on Device :: Android studio  যে ফোন থেকে ইন্সটল করছি ওই ফোনের আইডিটা লাগবে সেজন্য logcat থেকে search করব inappmess  এখানের শেষের id টা নিবো firebase এ  এনে বসাবো এবং Test এ চাপ দিবো । এখন ঐ device এ app run করলে result দেখতে পাবো । 
+
+
+------2115-------
+
+  
