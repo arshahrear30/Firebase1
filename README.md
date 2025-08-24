@@ -77,3 +77,14 @@ Text on Device :: Android studio  যে ফোন থেকে ইন্সট�
 ------2115-------
 Real time Notification : App open করলেই যে বলে Allow App_name to send you notification . Allow / Don't Allow
   https://firebase.google.com/docs/cloud-messaging/android/client
+
+  user  যখন ফাস্ট পেজে থাকে  তখনই পারমিশন গুলো চেয়ে নিতে হয় । 
+
+Link এর page এ গিয়ে Request runtime notification permission on Android 13+ এ যাবো code টা কপি করবো । আর Manifest এ 
+  <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> //এই permission টা ও Add করতে হবে ।
+  
+
+
+Follow this java code :  https://github.com/arshahrear30/Firebase1/blob/main/MainActivity2115.java
