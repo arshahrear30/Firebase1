@@ -90,4 +90,26 @@ Link এর page এ গিয়ে Request runtime notification permission on And
 Follow this java code :  https://github.com/arshahrear30/Firebase1/blob/main/MainActivity2115.java
 
 -----2116-------
-Menifest এ সার্ভিস এড করতে হবে
+firebase android package লিখে search করবো Cloud Messaging Library Add করবো 
+implementation("com.google.firebase:firebase-messaging")
+
+Menifest এ সার্ভিস এড করতে হবে Edit your app manifest অংশে code পাবো
+এর কাজ হল push নোটিফিকেশন যাতে ঠিকভাবে কাজ করে সেটা এনাবেল করা <application  এর ভিতর
+<service
+    android:name=".java.MyFirebaseMessagingService"
+    android:exported="false">
+    <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+    </intent-filter>
+</service>
+ প্রাথমিক অবস্থায় .java.MyFirebaseMessagingService এটা ইরোর হিসেবে থাকবে
+
+  firebase link এর নিচে দেখবে অপশনাল metadata কিছু কোড আছে এগুলোর মাধ্যমে নোটিফিকেশনের ভিতরে আইকন সেট করা যায় এবং
+  ডিফল্ট আইকন কি হবে সেটাও অটোসেট থাকে  ডিফল্টভাবে অ্যাপস এর লোগোটাই দেখাবে
+  এগুলো সবগুলোই এপ্লিকেশন ট্যাগের ভিতর রাখতে হবে 
+
+   উপরের যে এরর টা আছে সেটা সলভ করার জন্য আমরা Monitor token generation এর ভিতরের কোডের নিচে যে github লিঙ্কটা আছে সেটাই প্রবেশ করব
+
+   package name এর উপর Right click << Java class << error নামটা copy করবো << public class MyFirebaseMessagingService {} এই কথাটা কাটবো but ঊপরের package টা রাখবো । <<
+   
+
