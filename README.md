@@ -110,6 +110,16 @@ Menifest এ সার্ভিস এড করতে হবে Edit your app m
 
    উপরের যে এরর টা আছে সেটা সলভ করার জন্য আমরা Monitor token generation এর ভিতরের কোডের নিচে যে github লিঙ্কটা আছে সেটাই প্রবেশ করব
 
-   package name এর উপর Right click << Java class << error নামটা copy করবো << public class MyFirebaseMessagingService {} এই কথাটা কাটবো but ঊপরের package টা রাখবো । <<
-   
+   package name এর উপর Right click << Java class << error নামটা copy করবো << public class MyFirebaseMessagingService {} এই কথাটা কাটবো but ঊপরের package টা রাখবো । << phaste করবো
 
+   -----2117-------
+ আমরা তো সব সময় ফোনের apps এ বসে থাকি না ফোন পকেটে নিয়ে যেকোনো জায়গায় ঘুরি কিন্তু ওই সময়ও আমাদের ফোনে অ্যাপস থেকে নোটিফিকেশন আসে 
+ এখন আমরা সেটাই কন্ট্রোল করব ফায়ার ভেজ এর মাধ্যমে
+
+  একটি মেসেজ রিসিভ হওয়ার জন্য onMessageReceived মেথড কল হয়
+
+প্রথমবার যখন অ্যাপসটি লঞ্চ হয় তখন firebase কিছু টোকেন ক্রিয়েট করে তখন onNewToken মেথডটি কল হয়
+
+অনেকগুলো method remove করা হইছে ।
+
+ -----2118-------
