@@ -88,3 +88,6 @@ Link এর page এ গিয়ে Request runtime notification permission on And
 
 
 Follow this java code :  https://github.com/arshahrear30/Firebase1/blob/main/MainActivity2115.java
+
+-----2116-------
+Menifest এ সার্ভিস এড করতে হবে
