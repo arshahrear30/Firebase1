@@ -118,8 +118,12 @@ Menifest এ সার্ভিস এড করতে হবে Edit your app m
 
   একটি মেসেজ রিসিভ হওয়ার জন্য onMessageReceived মেথড কল হয়
 
-প্রথমবার যখন অ্যাপসটি লঞ্চ হয় তখন firebase কিছু টোকেন ক্রিয়েট করে তখন onNewToken মেথডটি কল হয়
+প্রথমবার যখন অ্যাপসটি লঞ্চ হয় তখন firebase কিছু টোকেন ক্রিয়েট করে তখন onNewToken মেথডটি কল হয় ।
 
 অনেকগুলো method remove করা হইছে ।
 
  -----2118-------
+
+ https://console.firebase.google.com/u/0/project/fir-bongo-5d8d5/messaging 
+
+ Messaging থেকে << New Campaign << Notifications << ছবি upload দিতে চাইলে Firebase update করতে হবে। <<Additional options sound Enable করবে
