@@ -124,6 +124,19 @@ Menifest এ সার্ভিস এড করতে হবে Edit your app m
 
  -----2118-------
 
+  if(remoteMessage.getNotification()!=null){
+            //Show the notification
+
+            String notificationBody = remoteMessage.getNotification().getBody();
+            String notificationTitle = remoteMessage.getNotification().getTitle();
+            sendNotification(notificationTitle,notificationBody);
+
+
+
+        }
+
+        private void sendNotification(String title,String body)
+
  https://console.firebase.google.com/u/0/project/fir-bongo-5d8d5/messaging 
 
  Messaging থেকে << New Campaign << Notifications << ছবি upload দিতে চাইলে Firebase update করতে হবে। <<Additional options sound Enable করবে
