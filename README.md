@@ -140,3 +140,9 @@ Menifest এ সার্ভিস এড করতে হবে Edit your app m
  https://console.firebase.google.com/u/0/project/fir-bongo-5d8d5/messaging 
 
  Messaging থেকে << New Campaign << Notifications << ছবি upload দিতে চাইলে Firebase update করতে হবে। <<Additional options sound Enable করবে
+
+ -----2119-------
+ প্রতিটা অ্যাপসে একটা নির্দিষ্ট পরিমাণ টোকেন থাকে আর এই টোকেন গুলো দিয়ে এক এপ্স থেকে অন্য অ্যাপসের মধ্যে মেসেজ আদান প্রদান করা যায়
+
+ https://firebase.google.com/docs/cloud-messaging/android/client#sample-register
+ 
