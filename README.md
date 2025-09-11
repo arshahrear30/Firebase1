@@ -94,7 +94,11 @@ firebase android package লিখে search করবো Cloud Messaging Librar
 implementation("com.google.firebase:firebase-messaging")
 
 Manifest এ সার্ভিস এড করতে হবে Edit your app manifest অংশে code পাবো
+
+https://firebase.google.com/docs/cloud-messaging/get-started?platform=android#edit-app-manifest
+
 এর কাজ হল push নোটিফিকেশন যাতে ঠিকভাবে কাজ করে সেটা এনাবেল করা <application  এর ভিতর
+
 <service
     android:name=".java.MyFirebaseMessagingService"
     android:exported="false">
@@ -102,15 +106,17 @@ Manifest এ সার্ভিস এড করতে হবে Edit your app m
         <action android:name="com.google.firebase.MESSAGING_EVENT" />
     </intent-filter>
 </service>
+
  প্রাথমিক অবস্থায় .java.MyFirebaseMessagingService এটা ইরোর হিসেবে থাকবে
 
   firebase link এর নিচে দেখবে অপশনাল metadata কিছু কোড আছে এগুলোর মাধ্যমে নোটিফিকেশনের ভিতরে আইকন সেট করা যায় এবং
   ডিফল্ট আইকন কি হবে সেটাও অটোসেট থাকে  ডিফল্টভাবে অ্যাপস এর লোগোটাই দেখাবে
   এগুলো সবগুলোই এপ্লিকেশন ট্যাগের ভিতর রাখতে হবে 
 
+https://firebase.google.com/docs/cloud-messaging/get-started?platform=android#monitor-token-generation
    উপরের যে এরর টা আছে সেটা সলভ করার জন্য আমরা Monitor token generation এর ভিতরের কোডের নিচে যে github লিঙ্কটা আছে সেটাই প্রবেশ করব
 
-   package name এর উপর Right click << Java class << error নামটা copy করবো << public class MyFirebaseMessagingService {} এই কথাটা কাটবো but ঊপরের package টা রাখবো । << phaste করবো
+   Android studio এর package name এর উপর Right click << Java class << error নামটা copy করবো .java. বাদ দিয়ে << public class MyFirebaseMessagingService {} এই কথাটা কাটবো but ঊপরের package টা রাখবো । << phaste করবো -Monitor token generation github code
 
    -----2117-------
  আমরা তো সব সময় ফোনের apps এ বসে থাকি না ফোন পকেটে নিয়ে যেকোনো জায়গায় ঘুরি কিন্তু ওই সময়ও আমাদের ফোনে অ্যাপস থেকে নোটিফিকেশন আসে 
