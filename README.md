@@ -93,7 +93,7 @@ Follow this java code :  https://github.com/arshahrear30/Firebase1/blob/main/Mai
 firebase android package লিখে search করবো Cloud Messaging Library Add করবো 
 implementation("com.google.firebase:firebase-messaging")
 
-Menifest এ সার্ভিস এড করতে হবে Edit your app manifest অংশে code পাবো
+Manifest এ সার্ভিস এড করতে হবে Edit your app manifest অংশে code পাবো
 এর কাজ হল push নোটিফিকেশন যাতে ঠিকভাবে কাজ করে সেটা এনাবেল করা <application  এর ভিতর
 <service
     android:name=".java.MyFirebaseMessagingService"
