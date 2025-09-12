@@ -135,6 +135,10 @@ implementation("com.google.firebase:firebase-messaging")       sync করলে
 
  -----2118-------
 
+
+25-30 line update করছি :: https://github.com/arshahrear30/Firebase1/edit/main/MyFirebaseMessagingService.java
+
+শুধু এই লাইন গুলো নতুন 
   if(remoteMessage.getNotification()!=null){
             //Show the notification
 
@@ -142,16 +146,16 @@ implementation("com.google.firebase:firebase-messaging")       sync করলে
             String notificationTitle = remoteMessage.getNotification().getTitle();
             sendNotification(notificationTitle,notificationBody);
 
-
-
         }
 
         private void sendNotification(String title,String body)
 
  https://console.firebase.google.com/u/0/project/fir-bongo-5d8d5/messaging 
 
- Messaging থেকে << New Campaign << Notifications << ছবি upload দিতে চাইলে Firebase update করতে হবে। <<Additional options sound Enable করবে
+ Messaging থেকে << New Campaign <<Firebase Notification messages << ছবি upload দিতে চাইলে Firebase update করতে হবে। // online thekay picture link dia dibo <<Additional options sound Enable করবে
 
+
+3/Send to eligible users এখানে practice এর জন্য Now দিয়ে use করতে পারি 
  -----2119-------
  প্রতিটা অ্যাপসে একটা নির্দিষ্ট পরিমাণ টোকেন থাকে আর এই টোকেন গুলো দিয়ে এক এপ্স থেকে অন্য অ্যাপসের মধ্যে মেসেজ আদান প্রদান করা যায়
 
