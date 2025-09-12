@@ -146,6 +146,8 @@ implementation("com.google.firebase:firebase-messaging")       sync করলে
 
  -----2118-------
 
+MainActivity তে Add করো :  https://github.com/arshahrear30/Firebase1/blob/main/MainActivity2118.java
+
 
 25-30 line update করছি :: https://github.com/arshahrear30/Firebase1/edit/main/MyFirebaseMessagingService.java
 
