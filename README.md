@@ -70,6 +70,9 @@ Firebase Cloud Messaging API (V1) এটা By default Enable থাকে ।
 👉12👈
  আমাদের টার্গেট হচ্ছে in app messaging  সিস্টেমটি enable করা:::
 Project overview << project setting << cloud messaging << 	Manage service accounts << click left 3 dot << Go APIs and Services << Enable APIs and Services << Click  +Enable APIs and Services << Search<< In App Messaging API << Enable it <<Manage << Quotas and system limits <<   কত লিমিট পর্যন্ত ফ্রি দিবে সেটা আমরা এখানে দেখতে পারব
+
+প্রতিবার new Firebase project create করলে ঐটার জন্য গিয়ে Firebase In-App Messaging API Enable করতে হবে ।
+
 👉13👈
 এখন মেইন কাজ :: 
 Project Overview এর নিচে << RUN << Messaging << Firebase in-app messages<< Create <<   মন মত campaign তৈরি করবো । Target এর এখানে App select করার পর Localise করতে পারবো । মানে বিভিন্ন দেশের জন্য বিভিন্ন ভাষায় কাজ করবে এটা । << next <<next <<Review(class 15:40sec) //113
