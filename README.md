@@ -45,7 +45,7 @@ Add App nickname and Click Resister App
 
 Step 3 ত শুরুতেই library implement করে নিচি  step 4 Continue
 👉10👈
-Check in Firebase Consol Analysis How many active device? 
+🚀Check in Firebase Consol Analysis How many active device? ❓
 
  
 ////////////2112////////////
