@@ -47,6 +47,8 @@ Step 3 ত শুরুতেই library implement করে নিচি  step 
 👉10👈
 🚀Check in Firebase Consol Analysis How many active device? ❓
 
+💀🚨🏴‍☠️❌☢️⚠️🔴User এর ফোনে যদি Setting এ Private DNS , On থাকে / Automatic  থাকে তাহলে Firebase Analytics এ Active user এর জায়গায় / Realtime Analytics এর জায়গায় ওই user এর কোনো data show হবে না । তাই practice করার সময় অবশ্যই practice device DNS off আছে কিনা check করবা । 
+
  
 ////////////2112////////////
  In app messaging
