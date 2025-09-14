@@ -174,4 +174,9 @@ MainActivity তে Add করো :  https://github.com/arshahrear30/Firebase1/b
 
  https://firebase.google.com/docs/cloud-messaging/android/client#sample-register
  
------2020------
+-----2019------
+
+https://firebase.google.com/docs/cloud-messaging/get-started?platform=android
+
+ প্রতিটা ডিভাইসের একটা রেজিস্ট্রেশন টোকেন থাকে আমরা সেই টোকেন কালেক্ট করে কাজ করব  তাহলে আমরা একটা ডিভাইসের সাথে আরেকটা ডিভাইসের কানেকশন করাতে পারবো
+https://firebase.google.com/docs/cloud-messaging/get-started?platform=android#access-device-registration-token
