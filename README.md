@@ -234,6 +234,18 @@ require 'get-access-token.php'; // 👉এখানে get-access-token php file
 $serviceAccountKeyFile = 'service-account-file.json';👉//firebase consolএsetting GeneralপাশেService accounts>>Generate new private key click>>Generate key>>Rename file as(service-account-file) 
 $accessToken = getAccessToken($serviceAccountKeyFile);  এই তিনটা লাইন firebase এর শুরুতে edit করবো । আর device token id device এ usb দিয়ে connect করা অবস্থায় logcat এ token দিয়ে search করে বের করে নিবো এবং firebase.php  এর শুরুতে token এ বসিয়ে নিবো । 
 
+👉15👈
+Android Studio এর MyFirebaseMessagingService.java এই ফাইলে onMessageReceived এর if এর পর else করে বসাবো 
+
+//2121fb উপরের টায় getNotification() করছি এবার getData() করবো ।
+        else{
+
+            String notificationBody = remoteMessage.getData().get("body");
+            String notificationTitle = remoteMessage.getData().get("title");
+            sendNotification(notificationTitle,notificationBody);
+
+        }
+
 
 
 
