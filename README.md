@@ -215,6 +215,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_exec($ch); curl টাকে execute করো 
 
 -----2021------
+এই কাজগুলো localy / domain hosting দিয়েও server থেকে করা যায়
 XAMPP install করো ।
 Go : 
 http://localhost/dashboard/ এটা default 
