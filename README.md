@@ -221,6 +221,9 @@ http://localhost/dashboard/ এটা default
 👉15👈
 PC তে C:\xampp\htdocs যাও এখানে firebase folder create করো। এবং এবার search করো : http://localhost/firebase/   দেখো (https://github.com/arshahrear30/Firebase1/blob/main/firebase.php) php file আছে ঐটা phaste in firebase folder name as firebase.php and now again go in http://localhost/firebase/
 
+আর device token id device এ usb দিয়ে connect করা অবস্থায় logcat এ token দিয়ে search করে বের করে নিবো এবং firebase.php  এর শুরুতে token এ বসিয়ে নিবো । 
+
+
 //i collected this code from
 https://github.com/LearnWithYeamin/get-access-token?fbclid=IwY2xjawM2At9leHRuA2FlbQIxMABicmlkETFaUDkyQVNRRGp1amRXYmRZAR4bjst7AfKj6cYTcajLWcH-BSULYqAU01ibnG-ixVbF64Pm4epl2cOEJcnEiw_aem_lcZDX_p0sUBfuJ1tqrDaNg
 //
@@ -231,9 +234,9 @@ Firebase Cloud Messaging: FCM HTTP v1 API :https://fcm.googleapis.com/v1/project
 👉15👈
 এবার 
 require 'get-access-token.php'; // 👉এখানে get-access-token php file create করা লাগবে । ভিতরে code : https://github.com/arshahrear30/Firebase1/blob/main/get-access-token.php
+👉15👈
 $serviceAccountKeyFile = 'service-account-file.json';👉//firebase consolএsetting GeneralপাশেService accounts>>Generate new private key click>>Generate key>>Rename file as(service-account-file) 
-$accessToken = getAccessToken($serviceAccountKeyFile);  এই তিনটা লাইন firebase এর শুরুতে edit করবো । আর device token id device এ usb দিয়ে connect করা অবস্থায় logcat এ token দিয়ে search করে বের করে নিবো এবং firebase.php  এর শুরুতে token এ বসিয়ে নিবো । 
-
+$accessToken = getAccessToken($serviceAccountKeyFile);  এই তিনটা লাইন । 
 👉15👈
 Android Studio এর MyFirebaseMessagingService.java এই ফাইলে onMessageReceived এর if এর পর else করে বসাবো 
 
