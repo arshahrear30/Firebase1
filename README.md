@@ -180,3 +180,43 @@ https://firebase.google.com/docs/cloud-messaging/get-started?platform=android
 
  প্রতিটা ডিভাইসের একটা রেজিস্ট্রেশন টোকেন থাকে আমরা সেই টোকেন কালেক্ট করে কাজ করব  তাহলে আমরা একটা ডিভাইসের সাথে আরেকটা ডিভাইসের কানেকশন করাতে পারবো
 https://firebase.google.com/docs/cloud-messaging/get-started?platform=android#access-device-registration-token
+
+-----2020------
+
+ ধরো কোন একটা ইউজার আজকের লগইন করলো আমি তাকে দুই বছরের জন্য কোন একটা সার্ভিসের দিতে চাচ্ছি এক্সেস দিতে চাচ্ছি তখন সে একাউন্ট খুললে তার ফায়ার বেস টোকেনটা আমরা সংগ্রহ করবো এবং একটা বট লাগিয়ে দিতে পারি যেটা তাকে অটোমেটিক দুই বছর পর রিমুভ করে দেবে এরকম এরকম সুন্দর সুন্দর কাজ firebase token মাধ্যমে করা হয়
+
+Client url = CURL   fcm.googleapis.com/fcm/send
+
+
+$headers
+//---------
+Content-Type: application/json
+Authorization: key=???
+//---------
+
+
+
+$json array : 
+//========
+$data = array(
+  'title' => $title,
+  'body' => $body
+);
+//========
+
+$ch  এটা variable 
+curl_init মানে curl টা শুরু হলো 
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);  মানে curl এর setting এ google curl url রাখবো optimization এর জন্য
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST"); মানেgoogle curl url কে  post method এ CUSTOMREQUEST দিবো ।
+curl_setopt($ch, CURLOPT_POSTFIELDS, $json); কি কি তথ্য ঐ নিদিষ্ট device এ পাঠাতে চাও 
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+curl_exec($ch); curl টাকে execute করো 
+
+-----2021------
+XAMPP install করো ।
+Go : 
+http://localhost/dashboard/ এটা default 
+
+PC তে C:\xampp\htdocs যাও এখানে firebase folder create করো। এবং এবার search করো : http://localhost/firebase/   দেখো class এর পাশে একটা php file আছে ঐটা download and extract and phaste in firebase folder and now again go in http://localhost/firebase/
