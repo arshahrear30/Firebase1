@@ -29,9 +29,28 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             String notificationTitle = remoteMessage.getNotification().getTitle();
             sendNotification(notificationTitle,notificationBody);
 
+        }
 
+        //2121fb উপরের টায় getNotification() করছি এবার getData() করবো ।
+        else{
+
+            String notificationBody = remoteMessage.getData().get("body");
+            String notificationTitle = remoteMessage.getData().get("title");
+            sendNotification(notificationTitle,notificationBody);
 
         }
+
+
+        //2121==============
+
+        String title = remoteMessage.getData().get("title");
+        String body = remoteMessage.getData().get("body");
+
+        if (title!=null){
+            sendNotification(title, body);
+        }
+
+        //2121==============
 
     }
 
