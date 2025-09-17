@@ -252,4 +252,4 @@ Android Studio এর MyFirebaseMessagingService.java এই ফাইলে onM
 
 
 
-
+-----2122+2123------ এই নিয়মগুলো playstore এ ছাড়া যাবে না । এটা bot mechanism এর অংশ কিভাবে user এর অগচরে backend থেকে user এর ফোন থেকে অন্য কারো phone a sms পাঠাবে । যদিও এইটা এখন ঠিক ঠাক কাজ করে না 
